@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/MKWeb-master/bdd"
+		},
+		{
+			"path": "../../../Downloads/MKWeb-master/connect_db"
+		},
+		{
+			"path": "../../../Downloads/MKWeb-master/html"
+		},
+		{
+			"path": "../../../Downloads/MKWeb-master/logs"
+		}
+	],
+	"settings": {}
+}
