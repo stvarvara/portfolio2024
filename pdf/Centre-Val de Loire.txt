@@ -1,0 +1,38 @@
+CODE=fr-CVL 
+TITRE=Environnement
+DEBUT_TEXTE 
+Le territoire régional abrite trois [parcs naturels régionaux](https://fr.wikipedia.org/wiki/Parc_naturel_régional_de_France) : la Brenne, Loire-Anjou-Touraine et le Perche. Au-delà des images de grandes étendues céréalières, le Centre-Val de Loire dispose d’une grande diversité de paysages et de milieux naturels : forêts, étangs, pelouses calcaires sèches, landes, tourbières, et la Loire et ses bancs de sable et forêts alluviales.
+23 % du territoire régional, soit 900 000 hectares, est couvert par les forêts et les autres boisements, principalement la forêt d’Orléans, la Sologne et l’est de la forêt du Perche. Les forêts sont en très grande majorité privées (85 %). La juxtaposition de milieux fermés et ouverts favorise une grande diversité biologique, depuis les grands mammifères comme le cerf élaphe, le chevreuil, le sanglier, les oiseaux des bois comme l’engoulevent d'Europe, le pic noir et le pic cendré.
+De plus, la région accueille plus de 5 % des zones humides connues sur le territoire national[réf. souhaitée] concentrées surtout en Brenne avec ses 1300 étangs et en Sologne avec ses 3000 étangs. Ces zones humides recèlent une grande diversité d’insectes et constituent une ressource importante pour les nombreuses espèces des cinq classes de vertébrés. Au cours des dix dernières années, plus de 10 % des zones de marais ou de tourbières ont néanmoins disparu.
+Les aménagements fluviaux perturbent la dynamique fluviale avec à terme une disparition des zones humides et des vallées alluviales. Les zones d’extraction de granulats ont augmenté par exemple de 30 % en dix ans (16 % au niveau national). Cette disparition entraîne la réduction de la biodiversité de la région. Les peuplements piscicoles reflètent la dégradation du milieu aquatique et restent majoritairement (61 %) perturbés ou dégradés.
+La région abrite la plus grande forêt domaniale de France, la forêt d'Orléans qui s’étend sur plus de 35 000 ha au nord de la Loire et d’Orléans. La forêt accueille depuis les années 1980 la nidification du balbuzard pêcheur, marquant le retour du rapace en France après des décennies de déclin. Disparu du territoire métropolitain au cours du xixe siècle, le rapace avait trouvé un dernier refuge en Corse où il ne subsistait que trois couples en 1974.
+La région est écologiquement très fragmentée. En 2010, la [DREAL](https://fr.wikipedia.org/wiki/Direction_régionale_de_l%27Environnement,_de_l%27Aménagement_et_du_Logement) et la Région ont lancé l’élaboration du Schéma régional de cohérence écologique (SRCE), visant à restaurer dans la région un réseau écologique plus fonctionnel. En 2001, une première cartographie de la trame verte et bleue et des milieux naturels a été réalisée qui permettra de préparer le SRCE, traduction administrative du projet de Trame verte et bleue européenne (Réseau écologique paneuropéen, national et régional pour les six départements de cette région, dans le cadre de la loi Grenelle II et de la nouvelle Stratégie nationale pour la biodiversité (2010-2011).
+FIN_TEXTE 
+SOUS_TITRE=Flore
+DEBUT_TEXTE 
+Bien qu’encore incomplets selon les départements, les inventaires floristiques du Centre-Val de Loire font état d’une grande diversité des milieux, de grands espaces forestiers comme la Sologne aux grandes plaines comme la Beauce. Le département du Loiret, par exemple, abrite presque un tiers de la flore française avec plus de 1 450 espèces.
+FIN_TEXTE
+TITRE=Énergie
+DEBUT_TEXTE
+La principale production d’énergie du Centre-Val de Loire est d’origine nucléaire et ne sert pas exclusivement le niveau régional. Quatre centrales — Chinon, Saint-Laurent-des-Eaux, Belleville et Dampierre — représentent la quasi-totalité[réf. souhaitée] de la production énergétique régionale et produisent 15 % de l’énergie nucléaire française. La proximité de l'Île-de-France, forte consommatrice d’électricité a justifié l’implantation de ces centrales[réf. souhaitée]. Pour le transport de l'énergie, un réseau dense de lignes électriques de hautes et très hautes tensions est présent sur tout le territoire régional (4 382 km au 1er janvier 2002). Il y a trois barrages hydroélectriques sur l’Indre.
+La consommation régionale représente 4 % de la consommation d’énergie nationale ce qui reste proportionnel à la population. La tendance globale est à l’augmentation de la consommation liée, entre autres, à l’évolution des comportements individuels.
+Les ressources utilisées sont les produits pétroliers, le gaz naturel et l’électricité nucléaire. La consommation de gaz naturel et d’énergie nucléaire a presque doublé en seize ans (pour la période 1982/1998).
+Le potentiel d’énergies renouvelables disponibles a été estimé à plus de 900 000 tep/an (tonne d'équivalent pétrole/an), sachant que la consommation totale est évaluée à six millions de tep.
+Le bois est le premier gisement d’énergie renouvelable du Centre-Val de Loire. Le taux de boisement atteint 22 % et a connu un accroissement de 40 % en un siècle. La région compte 650 entreprises d’exploitation ou de scierie. L’usage de la paille peut également être associé à la filière bois.
+La région est la première productrice de colza, elle produit également du diester (additif du gazole à hauteur de 5 %) et de l’éthanol (à partir de blé ou de betterave) permettant la création de biocarburants.
+Il existe par ailleurs une petite production de pétrole dans le département du Loiret, d'environ 45 000 tonnes par an (soit moins de 1 000 barils par jour).
+En 2006, le Centre-Val de Loire est la première région pour la production d'électricité éolienne avec une capacité de près de 244 MW. L'Eure-et-Loir représente près de 67 % de ce total avec 77 éoliennes installées.
+En 2017, selon RTE, la région Centre-Val de Loire possède une capacité éolienne de 1 016,9 MW.
+FIN_TEXTE
+DEBUT_STATS
+Prod #1,127,196172,185,270201
+Prod #2,20,8832,27,11983
+Prod #3,178,127923,210,192233
+Prod #4,122,120793,125,128083
+FIN_STATS
+MEILLEURS:AGZ/Agathe Zeblouz=21K€,JOD/John Deuff=25K€,LAG/Laurent Gina=28K€,MAZ/Maude Zarela=31K€,JES/Jessica Seuroll=27K€
+
+DEBUT_CREDITS
+- Wikipedia
+- [Face Co] (https://face.co)
+FIN_CREDITS

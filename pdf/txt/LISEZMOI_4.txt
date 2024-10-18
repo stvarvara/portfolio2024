@@ -1,0 +1,13 @@
+Le script "region.php" permet de fusionner les informations précédement extraitent, dans un format html.
+L'execution du script renvoie le code html qui peut être placer d'un fichier html (comme avec la comande plus bas).
+
+
+Pour lancer le script "region.php" il faut taper la commande suivante dans le terminal (image docker utilisée "sae103-php"):
+    docker run --rm -ti -v <chemin_absolu_host>:<chemin_absolu_conteneur> sae103-php -f region.php > <nom_region>.html
+
+Pour le lancer depuis l'IUT :
+    docker run --rm -ti -v /Docker/<login>/<dossier>:/work sae103-php -f region.php > <nom_region>.html
+
+Pour pull l'image pour le php :
+    docker pull sae103-php
+    

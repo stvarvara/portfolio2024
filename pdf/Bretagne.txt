@@ -1,0 +1,29 @@
+CODE=fr-bre 
+TITRE=Géographie
+DEBUT_TEXTE 
+Les quatre départements de la région forment une péninsule à l’extrémité ouest de l’Eurasie ; la mer entoure les quatre cinquièmes de la région. Les côtes sont profondément entaillées et dessinent une multitude de presqu’îles. Les abers, sortes de vallées fluviales où la mer remonte à chaque marée, rappellent partout la présence de l’océan. Le littoral, plus peuplé, est dénommé l’Armor. Ses paysages maritimes font face à ceux plus campagnard de l’intérieur : l’Argoat. Les deux se mêlent constamment et construisent ainsi l’identité du territoire. La Bretagne est la région française qui bénéficie de la plus grande longueur de côtes puisqu'avec plus de 2 700 km de côtes, elle représente un tiers du littoral de la métropole. De nombreuses îles sont présentes au large de la Bretagne, on dénombre 797 îles et îlots tout le long du littoral breton.
+Cette péninsule est à la fois une extrémité terrestre pour le voyageur et une porte d’entrée et de sortie pour le marin. L’attractivité économique et commerciale du littoral a favorisé l’implantation des villes. Elles se sont développées au fond de rias où l’on pouvait établir des ports abrités des tempêtes et bénéficier de la proximité d’un pont entre les deux rives (Dinan, Morlaix, Quimper, etc.).
+FIN_TEXTE 
+SOUS_TITRE=Les paysages
+DEBUT_TEXTE 
+   L’essentiel du relief est constitué de collines et de plateaux de faible altitude. Des roches plus dures ont mieux résisté à l’érosion et forment quelques crêtes comme les monts d'Arrée ou les montagnes Noires. Les points les plus hauts ne dépassent pas 400 mètres d’altitude (Roc'h Ruz, 385 m).
+   La région présente un habitat dispersé avec des parcelles entourées de haies et destinées à l’élevage. Les arbres sont nombreux (chênes, hêtres) et participent au paysage de bocage mais, paradoxalement, il y a peu de grandes forêts. La lande atlantique (bruyères, ajoncs) occupe les terres les plus pauvres. On trouve au nord de la région de vastes espaces ouverts où l’on produit des légumes en grande quantité.
+FIN_TEXTE
+SOUS_TITRE=Climat
+DEBUT_TEXTE
+La région Bretagne a un climat océanique, donc tempéré, surtout le long des côtes, avec de faibles différences de températures entre l'été et l'hiver. Le vent de nord-ouest (noroît ou plus précisément galerne en français, gwalarn en breton) domine au nord. Les pluies sont fréquentes, mais fines. Dans une même journée, il est courant qu'alternent éclaircies et ciel couvert.
+La végétation est abondante. La Bretagne était autrefois un pays de bocage : la réorganisation des parcelles dans les années 1960, appelée remembrement, a éliminé une grande partie des haies bordant les champs, permettant de moderniser l'agriculture mais entraînant un lessivage de la couche superficielle des champs. Ce remembrement s'est fait à plus basse échelle que dans de nombreuses plaines céréalières du reste de la France (Beauce, Champagne…).
+Comme toute région avec un grand littoral, ici amplifié par le climat océanique tempéré, il n'est pas surprenant d'avoir des conditions météorologiques différentes entre le proche littoral et les villes à quelques kilomètres dans les terres. Il en va de même pour les températures. À plus forte échelle, et sauf dans le cas de dépressions majeures, le climat reste sensiblement différent entre le Nord et le Sud de la Bretagne.
+Ce climat permet une plus grande homogénéité des températures sur l'année, même si les saisons restent marquées. Seul l'hiver ici est moins froid. La pluviométrie n'est que faiblement supérieure à celle d'autres régions, comme l'Île-de-France. Cela provient des vents d'ouest et nord-ouest, qui déplacent les éventuelles perturbations vers le centre et le nord de la France. Il n'est guère possible de donner de règle à la région entière, tant les statistiques sont différentes entre les différents secteurs, tels Brest, Quimper, Lorient, Morlaix ou encore Saint-Brieuc.
+FIN_TEXTE
+DEBUT_STATS
+Prod #1,201,289199,190,279102
+Prod #2,90,35019,93,34283
+Prod #3,217,191827,290,281923
+Prod #4,182,162719,127,108291
+FIN_STATS
+MEILLEURS:JOD/John Deuff=47K€,MAZ/Maude Zarela=32K€,OUL/Oussama Lairbon=15K€,DES/Debby Scott=44K€,SAT/Sacha Touille=25K€
+DEBUT_CREDITS
+- Wikipedia
+- [Face Co] (https://face.co)
+FIN_CREDITS

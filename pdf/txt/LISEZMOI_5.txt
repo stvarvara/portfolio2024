@@ -1,0 +1,6 @@
+Le script "Script_pdf.sh" permet de transformer un fichier HTML en PDF.
+
+Pour le lancer :
+./Script_pdf <login> <nom_fichier>
+
+Les HTML doivent être placées dans le même dossier que le script et les pdf sont renvoyés dans un dossier 'pdf'.

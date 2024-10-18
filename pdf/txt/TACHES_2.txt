@@ -1,0 +1,50 @@
+SAÉ 1.03 Installation d’un poste de
+développement
+
+
+
+
+Semaines 3
+
+
+
+
+LES TÂCHES RÉALISÉES
+
+
+1. Conversion en PNG en nuances de gris des avatars  de meilleurs vendeurs fournis par le client.
+On a utilisé l’image spéciale sur Docker - sae103-imagick. Elle a permet de facilement créer toutes les photos.
+2. Génération du QR-code de la dernière page
+En utilisant l’image de Docker, on a créé le script pour créer le QR-code avec le lien vers le site de la région. 
+3. On a ajouté les script PHP dans la maquette HTML pour fusionner tous les fichiers 
+(texte.dat, tableau.dat, comm.dat) ensemble dans le futur PDF fichier. 
+4. On a fusionné tous les scripts pdf et bash ensemble pour créer un seul script à exécuter.
+5. On a généré du PDF d’une région dans un conteneur à base d’une image sae103-html2pdf.
+6. Pour chaque étape nous avons fait des petites documentations pour simplifier les choses pour nous et vous.
+
+
+
+
+LA RÉPARTITION DU TRAVAIL
+
+
+* REMI 15%
+Rémi a écrit le script pour la conversation des photos.
+
+
+
+
+* VARVARA 15%
+Varvara a créé le script pour les QR-codes ainsi que la documentation finale.
+
+
+
+
+* NATHAN et KIM 50%
+Nathan et Kim ont fait le script PHP dans le fichier HTML.
+
+
+
+
+* ANTON 20%
+Anton a fait le script texte.dat pour la  transformation finale du HTML en PDF ainsi que le script final fusionné.

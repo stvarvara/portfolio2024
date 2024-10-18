@@ -1,0 +1,33 @@
+Code=FR-BFC
+Titre=Axes de communication et transports
+Sous_titre=Transports routiers
+Début_texte
+La région est composée d'un réseau de 868 km d'autoroutes : l'axe autoroutier principal est l'A6, dite Autoroute du Soleil, qui relie Paris et Lyon en traversant la région du nord-ouest au sud sur près de 300 km et dessert les villes d'Auxerre, Beaune, Chalon-sur-Saône et Mâcon. La seconde autoroute d'importance est l'A36, surnommée La Comtoise, qui part de Beaune, au centre de la région, et part vers l'est pour rejoindre l'Alsace et la frontière allemande au niveau de Mulhouse. Parcourant environ 200 km au sein de la Bourgogne-Franche-Comté, elle dessert les agglomérations de Dole, Besançon, Montbéliard et Belfort. Comptabilisant 120 km sur le territoire régional, l'[A39] (https://fr.wikipedia.org/wiki/Autoroute_A39_(France)) relie Dijon au sud de la région selon un axe nord-sud qui permet de délester l'A6 en passant à proximité de Dole et Lons-le-Saunier. Partant de Beaune vers le nord, l'A31 (80 km en Bourgogne-Franche-Comté) permet de rejoindre la Lorraine et le Luxembourg en passant par Dijon. L'autoroute A77 dessert exclusivement le département de la Nièvre sur 80 km, selon un axe nord-sud le long de la limite occidentale de la région : elle relie Nevers à l'Île-de-France. Quelques barreaux autoroutiers de moindre importance complètent le réseau, l'A5 (40 km), l'A19 (30 km), l'A38 (40 km), l'A40 (3 km), l'A406 (2 km), l'A391 (4 km), l'A3 (5 km).
+Le réseau routier principal est complété par 768 km de routes nationales. Reliant Nancy à la frontière franco-suisse selon un itinéraire nord-sud, la route nationale 57 parcourt 180 km à travers les départements de la Haute-Saône et du [Doubs](https://fr.wikipedia.org/wiki/Doubs_(département)) en passant par Luxeuil-les-Bains, Vesoul, Besançon et Pontarlier. La N151 relie Auxerre à La Charité-sur-Loire (100 km) via Clamecy. La N19 Langres-Belfort qui compte une centaine de kilomètres d'est en ouest à travers la Haute-Saône dessert Vesoul et Lure. En Saône-et-Loire, la N79 qui traverse le département d'est en ouest sur 80 km, de Mâcon à Digoin en passant par Paray-le-Monial, la N70 qui relie cette dernière à Montchanin sur 40 km et la N80 de Montchanin à Chalon-sur-Saône (30 km), constituent la portion bourguignonne de la route Centre-Europe Atlantique (RCEA). Connue pour son accidentologie élevée, elle est progressivement transformée en voie rapide à 2x2 voies. La N5 sillonne le département du Jura sur 70 km de Poligny à Champagnole et jusqu'aux Rousses, à la frontière entre la France et la Suisse. De Besançon à Poligny, la N83 s'étire sur une soixantaine de kilomètres.
+Fin_texte
+Sous_titre=Transports ferroviaires
+Début_texte
+Le réseau ferré en Bourgogne-Franche-Comté s’organise autour des principales agglomérations : Besançon et Dijon. La principale ligne est la ligne Paris-Belfort via Dijon et Besançon. Cette ligne est LGV de Paris à Montbard (LGV Sud-Est) et de Dijon à Belfort (LGV Rhin-Rhône). Le territoire est également quadrillé par des voies secondaires, où circulent principalement des TER Bourgogne-Franche-Comté, sur un réseau de 1 951 km.
+La plus grande gare de la région est Dijon-Ville, qui en 2019 accueille 5,8 millions de voyageurs ; viennent ensuite les gares de Besançon-Viotte (2,2 millions de voyageurs en 2019) et de Belfort-Ville (1,1 million de voyageurs en 2019). Toutes les autres gares ont desservi moins d'un million de voyageurs en 2019. À noter que les villes de Besançon, Belfort et Montbéliard disposent d'une deuxième gare sur la LGV Rhin-Rhône : Besançon Franche-Comté TGV et Belfort - Montbéliard TGV.
+Avec plus de 2 millions de voyageurs par an, la gare de Besançon-Viotte est la deuxième plus importante au niveau régional et le principal nœud ferroviaire de Franche-Comté.
+La mise en service de la première phase de la branche Est de la LGV Rhin-Rhône en 2011 a permis de raccourcir significativement les temps de parcours. La durée du trajet entre Belfort et Paris (gare de Lyon) est ainsi passée de 3 h à 2 h 30 min, entre Besançon et Paris de 2 h 30 min à 2 h, entre Besançon et Lyon de 2 h 20 min à 1 h 55 min et entre Besançon et Strasbourg, de 2 h 30 min à 1 h 40 min. Dans le même temps, les liaisons entre plusieurs villes de la région ont également été raccourcies, passant d’un trajet de 1 h à 0 h 30 min entre Dijon et Besançon et de 1 h 15 min à 0 h 25 min entre Besançon et Belfort. En tout, ce sont 14 gares qui sont desservies par le TGV dans la région.
+Plusieurs prolongements de la LGV Rhin-Rhône sont envisagés : la deuxième phase de la branche Est, qui constituera 50 km de ligne nouvelle dont 35 km à l'est et 15 km à l'ouest, pourrait être financée d'ici 2027 ou 2038 ; la branche Ouest, en projet, destinée à raccorder la branche Est à la LGV Sud-Est, et ainsi à la région parisienne, en traversant l'agglomération dijonnaise par sa bordure orientale ; enfin, la branche sud, également au stade de projet, qui représenterait environ 150 km de ligne nouvelle pour relier la branche Est à Lyon et à la LGV Méditerranée, assurant une connexion des bassins de population des villes de l'Est de la France, du Benelux, de l'Allemagne et du nord de la Suisse à la métropole lyonnaise et à l'arc méditerranéen.
+Fin_texte
+Sous_titre=Transports aériens
+Début_texte
+La région est desservie par le seul aéroport de Dole-Jura, propriété du conseil départemental du Jura. Situé entre Besançon et Dijon, il a accueilli plus de 100 000 passagers en 2018 et propose plusieurs lignes régulières en France ou à l'étranger.
+Les aéroports de Besançon - La Vèze et de Dijon-Bourgogne sont uniquement tournés vers les vols d’affaires en l’absence de lignes commerciales régulières.
+L'absence de grandes structures aéroportuaires s'explique par la proximité d'aéroports internationaux à Paris, Bâle, Genève et Lyon, aisément accessibles depuis la région.
+Fin_texte
+Début_stats
+Prod #1,316,130913,329,145199
+Prod #2,95,56910,82,29918
+Prod #3,156,81909,109,72901
+Prod #4,451,301922,516,401923
+Prod #5,210,102939,109,45192
+Fin_stats
+Meilleurs:JEU/Jeanne Ultou=39K€,JAH/Jacques Huse=47K€,LAG/Laurent Gina=22K€,NIN/Nicole Niskotch=32K€,JES/Jessica Seuroll=18K€
+Début_crédits
+- Wikipedia
+- [Face Co] (https://face.co)
+Fin_crédits

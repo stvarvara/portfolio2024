@@ -1,0 +1,75 @@
+SAÉ 1.03 Installation d’un poste de
+développement
+
+
+Semaines 1 et 2
+
+
+LES TÂCHES RÉALISÉES
+
+
+
+
+1. CRÉATION DU FICHIER DE CONFIGURATION REGIONS.CONF
+Nous avons d'abord créé un fichier regions.conf où on a mis
+l'information principale à propos de chaque région. Plus
+précisément, on a mis la population, la superficie et le nombre de
+départements.
+
+
+2. TRAITEMENT DES FICHIER DE DONNÉES À L'AIDE DE SCRIPT EN PHP
+
+
+* TEXTE.DAT
+Nous avons nettoyé les fichiers et extrait les informations principales
+des textes qui seront sur la première page de notre PDF. Tous les
+textes sont dans le fichier texte.dat.
+* TABLEAU.DAT
+On a fait la même chose avec les données pour le tableau des
+résultats. On a aussi fait le script qui calcule l'évolution de CA.
+* COMM.DAT
+Dans le fichier comm.dat on a mis les noms meilleurs commerciaux,
+triés par ordre croissant.
+
+
+3. DOCUMENTATION DU SCRIPT
+C'est une étape importante pour la compréhension de notre
+code. Nous avons essayé de bien commenter tous les scripts
+pour que vous compreniez après ses fonctions.
+
+
+4. LA MAQUETTE HTML
+On a créé le modèle du notre fichier PDF à l'aide de HTML et CSS.
+Les pages contiennent tous les informations nécessaires pour le
+fichier final. En plus, on a bien travaillé avec le design;)
+
+
+5. DOCUMENTATION DE LA LISTE DES TÂCHES RÉALISÉES
+Le dernier tâche réalisée - la documentation que vous lisez
+maintenant. C'est juste l'information nécessaire pour
+comprendre ce qu'on a fait pendant 3 semaines de travail.
+
+
+
+LA RÉPARTITION DU TRAVAIL
+
+
+* REMI 20%
+Remi a écrit le fichier regions.conf, il a recherché les fonctions nécessaires pour les
+scripts PHP et c'est lui qui a choisi le design de notre maquette HTML.
+
+
+* VARVARA 20%
+Varvara a fait la maquette HTML ainsi que le fichier CSS et le fichier que vous lisez maintenant.
+
+
+* NATHAN 20%
+Nathan a écrit le script pour le tableau tableau.dat avec les calculs nécessaires.
+
+
+* ANTON 20%
+Anton a fait le script texte.dat pour les textes dans la première page du fichier PDF.
+
+
+* KIM 20%
+Kim a fait le script comm.dat pour la page avec les meilleurs commerciaux.

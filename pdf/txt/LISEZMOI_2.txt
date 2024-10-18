@@ -1,0 +1,6 @@
+Le script "vendeur_img.sh" permet de transformer les images .svg en .png et leur ajoute un filtre noir et blanc.
+
+Pour le lancer :
+./vendeur_img.sh <login>
+
+Les images doivent être placées dans un dossier "images" et être sous format '.svg'.

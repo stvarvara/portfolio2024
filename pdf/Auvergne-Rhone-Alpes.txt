@@ -1,0 +1,30 @@
+
+
+CODE=FR-ARA
+TITRE=Démographie
+DEBUT_TEXTE
+Densité de population de la région Auvergne-Rhône-Alpes en 2006.
+   Avec 7 877 698 habitants en 2015, la région se place au deuxième rang des [régions métropolitaines](https://fr.wikipedia.org/wiki/Région_française) pour sa population mais aussi pour son nombre d’emplois. Entre 2009 et 2014, cette population a augmenté de 300 000 habitants. Sa densité de population, 109 hab/km2, est voisine de celle de la France mais sa croissance démographique est supérieure à celle du territoire métropolitain. Toutefois, il se cache derrière ces chiffres des écarts extrêmes entre les territoires des deux anciennes régions Auvergne et Rhône-Alpes.
+   L’Ardèche mise à part, ce sont les départements rhônalpins qui concentrent l'essentiel de la vitalité démographique de la région. Avec 509 habitants/km2, l'ensemble formé par le département du Rhône et la métropole de Lyon forme le territoire français le plus densément peuplé après l'Île-de-France. La Haute-Savoie, l’Isère et la Loire ont également une densité supérieure à la moyenne nationale. Le sillon alpin (Annemasse, Annecy, Chambéry, Grenoble) a connu une progression de sa population de plus de 10 % entre 1990 et 2000. La dynamique de l’aire urbaine lyonnaise s’étend dans le département de l’Ain et dans la vallée du Rhône. À l’ouest, en lisière du Massif central, le département de la Loire a connu une baisse de population jusqu’en 1999 mais progresse au même rythme que la moyenne nationale depuis.
+   Sur la bordure est, une zone à très faible densité de population suit les sommets alpins. Au centre, une bande verticale également faiblement peuplée suit les monts de la Madeleine, du Forez et du Vivarais et retrace en creux les frontières historiques entre provinces. À l'ouest, une vaste zone de dépression démographique se prolonge sur le Limousin et le sud du Massif central.
+   Situés au cœur du Massif central, les quatre départements auvergnats sont ceux où la population vit en moyenne le plus en altitude. S’inscrivant dans la diagonale du vide, leur densité de population moyenne n’est que de 52 habitants/km2. Les départements de l’Allier, du Cantal, et la moitié ouest de la Haute-Loire sont marqués par une faible natalité et un vieillissement de la population. À l'origine très rurale, leur population tend à s'urbaniser : plus de sept habitants sur dix vivent en ville. Grâce à l'attractivité de l’agglomération clermontoise et l’arrivée de jeunes familles, le Puy-de-Dôme limite cette tendance. Clermont-Ferrand se trouve au milieu d’un couloir urbain de 601 000 habitants qui s'étend de Vichy à Issoire en passant par Thiers en suivant l’Allier. Grâce au solde migratoire, les quatre départements ont malgré tout gagné 15 800 habitants entre 2008 et 2013.
+FIN_TEXTE
+TITRE=Typologie socio-économique des territoires
+SOUS_TITRE=Typologie des bassins de vie.
+DEBUT_TEXTE
+   La typologie des « bassins de vie » de la région établie par l'Agence régionale de développement des territoires d'Auvergne (ARDTA) et l'Insee identifie six types de bassins de vie aux caractéristiques différentes. Leur distribution géographique fait réapparaître les deux anciennes régions : Auvergne et Rhône-Alpes.
+   Les grandes agglomérations de Lyon, Clermont-Ferrand, Grenoble et Valence en croissance démographique depuis 1975, ainsi que celle de Saint-Étienne, stimulent des bassins de vie suburbains grâce à leur attraction économique. Si l'aire urbaine de Clermont-Ferrand reste isolée à l'ouest, toutes les autres forment un continuum polarisé par Lyon. À l'est, les zones rurales des Alpes bénéficient d'une situation économique très favorable grâce à l'apport bénéfique du tourisme d'hiver.
+   Des agglomérations moyennes comme Moulins, Vichy, Montluçon, Aurillac, Thiers à l'ouest ou Annecy et Privas plus à l'est se placent en situation intermédiaire entre ces deux derniers types.
+   À l'opposé, deux types de zones rurales en difficultés se font face. La première, située pour l'essentiel dans l'ancienne région Auvergne, correspond à des territoires de moyenne montagne, habités par une population âgée et majoritairement agricole. Les services publics et privés y sont insuffisants. Dans le Cantal, près de 17 % des personnes âgées de plus de 75 ans vivent sous le seuil de pauvreté alors qu'elles ne sont que 9,3 % en Auvergne-Rhône-Alpes.
+   La deuxième se retrouve au sud des départements de l'Ardèche et de la Drôme et plus localement en Bocage bourbonnais ou dans le Livradois. Il s'agit de bassins de vie ruraux très fragilisés socialement. Fortement touchées par le chômage, ces régions voient 5 % de leur population active sans emploi depuis plus d'un an contre moins de 4 % pour l'ensemble de la grande région.
+FIN_TEXTE
+DEBUT_STATS
+Prod #1,123,56789,112,48092
+Prod #2,56,12441,92,31283
+Prod #3,291,130192,318,151989
+FIN_STATS
+MEILLEURS:PAH/Paul Hochon=17K€,SOF/Sophie Fonfec=27K€,AGZ/Agathe Zeblouz=20K€,JEP/Jean Peuplu=21K€,GEM/Gérard Mensoif=15K€
+DEBUT_CREDITS
+- Wikipedia
+- [Face Co] (https://face.co)
+FIN_CREDITS

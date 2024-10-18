@@ -1,0 +1,18 @@
+Le script "extraction.php" permet d'extraire les informations nécessaires au contenu de futur pdf des regions.
+Il permet de séparer les données dans 4 fichiers différents afin de pouvoir les utilisées plus aisément par la suite.
+
+
+Pour lancer le script "extraction.php" il faut taper la commande suivante dans le terminal (image docker utilisée "sae103-php"):
+    docker run --rm -ti -v <chemin_absolu_host>:<chemin_absolu_conteneur> sae103-php -f extraction.php <nom_fichier_texte>
+
+Pour le lancer depuis l'IUT :
+    docker run --rm -ti -v /Docker/<identifiant>/<chemin>:/work sae103-php -f extraction.php <nom_fichier_texte>
+
+Pour pull l'image pour le php :
+    docker pull sae103-php
+
+Quatre fichiers en .dat se créeront alors dans le dossier où est présent le script:
+    - qrcode.dat   (contenant un lien pour le qrcode)
+    - texte.dat     (contenant les textes, titres, sous-titres)
+    - comm.dat      (contenant les 3 meilleurs commerciaux)
+    - tableau.dat   (contenant les données du tableau)

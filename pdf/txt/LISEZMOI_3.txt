@@ -1,0 +1,10 @@
+Génération du QRCode
+Ce script permet de créer les QR-codes qrcode.png en utilisant l’image de Docker.
+
+Pour lancer le script “qrcode.sh”, il faut juste taper une commande suivante dans le terminal: 
+
+./qrcode.sh <votre login>
+
+Si vous n’avez pas les droits d'exécution, il faut tapper:
+
+chmod +x qrcode.sh
