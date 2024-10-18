@@ -1,0 +1,436 @@
+@import url("setup.css");
+// Variables
+$myFont: "Plus Jakarta San", sans-serif;
+$mainViolet: #5669ff;
+$mainJeune: #ffd33c;
+$mainNoir: #222222;
+$mainGris: #878787;
+$mainBlanc: #ffffff;
+
+$hoverViolet: #9aa5ff;
+$selectedViolet: #273efc;
+$selectedBlanc: #e1ebf4;
+
+$boutonPink: #dd69fa;
+$boutonGreen: #79da7d;
+$boutonRouge: #ff6258;
+
+$h1Size: 4rem;
+$h2Size: 2.25rem;
+$h3Size: 2rem;
+$h4Size: 1.5rem;
+$h5Size: 1.25rem;
+$h55Size: 1rem;
+$h6Size: 0.75rem;
+
+$sizeIcone: 2.5em;
+$sizeLogement: 21em;
+
+$lightWeight: 300;
+$normalWeight: 400;
+$semiboldWeight: 600;
+$boldWeight: 700;
+$lineHeight: 1.5;
+
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  
+    width: 100%;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+  
+      width: 100%;
+    }
+  
+    > .top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+  
+      > div {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        
+  
+        img {
+          max-width: $sizeIcone;
+          margin-left: 1.1em;
+        }
+      }
+      &> i{
+          font-size: 1.875rem;
+      }
+    }
+  
+    h1 {
+      text-align: left;
+      font-size: $h2Size;
+      font-weight: $semiboldWeight;
+    }
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.75rem;
+    border: $mainNoir 1px solid;
+    box-shadow: 4px 4px 10px rgba(27, 27, 27, 0.319);
+    padding: 1rem;
+  
+    > .top p,
+    h2 {
+      margin-left: 0.5rem;
+      font-weight: 300;
+      font-size: $h3Size;
+      letter-spacing: 1px;
+    }
+  
+    > .top {
+      flex-direction: column;
+    }
+  
+    > .top p {
+      font-size: $h55Size;
+    }
+  
+    .container {
+      padding: 0.5rem;
+      width: 100%;
+  
+      #image-preview {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1em;
+  
+        img {
+          width: 10rem;
+          height: 10rem;
+          object-fit: cover;
+        }
+  
+        div {
+          position: relative;
+        }
+  
+        div button {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          color: $boutonRouge;
+        }
+      }
+    }
+  
+    .field-container {
+      padding: 0.5rem;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  
+      &.check__list {
+        gap: 1.5rem;
+        justify-content: flex-start;
+      }
+  
+      gap: 0.75rem;
+  
+
+  
+      .input__checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+      }
+  
+      .full-size {
+        width: calc(100%);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+  
+        .info_gen__input {
+          width: 48%;
+        }
+      }
+  
+      .info_gen__input {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 0.5rem;
+  
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+  
+        &.adresse {
+          width: calc(65%);
+        }
+  
+        .input__input {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          input {
+            width: 45%;
+          }
+  
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0.5rem;
+  
+            input {
+              width: 95%;
+            }
+          }
+        }
+      }
+  
+      .amenagement__input {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+  
+        gap: 1rem;
+  
+        input {
+          width: 35%;
+        }
+        select {
+          width: 20%;
+          @media screen and (max-width: 600px) {
+            width: 42%;
+          }
+        }
+      }
+  
+      #list__amenagement {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+  
+        div {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 1rem;
+  
+          font-size: $h55Size;
+  
+          .btn__remove,.btn__remove_edit {
+            color: $boutonRouge;
+          }
+  
+          p {
+            font-weight: 400;
+            text-transform: capitalize;
+          }
+  
+          span {
+            font-weight: 200;
+            text-transform: lowercase;
+          }
+        }
+      }
+    }
+  
+    &#section__image {
+      gap: 1rem;
+      input[type="button"] {
+        background-color: $boutonGreen;
+        color: $mainBlanc;
+        width: 30%;
+        border: none;
+      }
+    }
+  }
+  
+  input:not([type="checkbox"]),
+  select,
+  option,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #222;
+    background: #fff;
+  }
+  
+  textarea {
+    padding: 0.55em;
+  }
+  
+  textarea::placeholder,
+  input:not([type="checkbox"])::placeholder {
+    color: rgba(34, 34, 34, 0.5);
+    font-size: $h55Size;
+  }
+  
+  select {
+    border-radius: 0.75rem;
+    border: 1px solid #222;
+    padding: 1rem;
+    color: rgba(34, 34, 34, 0.5);
+    font-size: $h55Size;
+    font-weight: $lightWeight;
+    appearance: none;
+    background-image: url("../img/down.webp");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.8rem auto;
+  }
+  
+  .ajouter,
+  .envoyer {
+    cursor: pointer;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    width: 10%;
+    background-color: $boutonGreen;
+    color: $mainBlanc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 600px) {
+      width: 18%;
+    }
+  }
+  
+  .envoyer {
+    width: 25%;
+    height: 40px;
+    background-color: $mainViolet;
+  }
+  
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid $mainViolet;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading__modal {
+    backdrop-filter: blur(10px);
+    z-index: 4;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #form__preview {
+    background-color: $boutonPink;
+  }
+
+  .logement__empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    h4{
+        font-size: $h4Size;
+        font-weight: $normalWeight;
+        color: $mainGris;
+        text-align: center;
+    }
+  }
+
+
+  .main__container > .top {
+    padding-top: 2rem;
+  }
+  @media screen and (max-width: 600px) {
+    .main__container > .top {
+      padding-top: 1rem;
+    }
+    section > .top p, section h2 {
+      font-size: 1.5rem;
+  }
+  section .field-container .full-size .info_gen__input{
+    width: 100%;
+  }
+  section .field-container .info_gen__input.adresse{
+    width: 100%;
+  }
+//   section .field-container .info_gen__input .input__input input {
+//     width: 100%;
+// }
+.envoyer{
+  padding: 1rem;
+  width: 40%;
+}
+
+.main__container form{
+  padding-bottom: 1.5rem;
+}
+section#section__image input[type=button] {
+  width: 100%;
+}
+section .field-container .amenagement__input{
+  flex-wrap: wrap;
+}
+.ajouter {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.main__container h1 {
+  font-size: 2rem;
+}
+  }
+  .main__container form{
+    padding-bottom: 2rem;
+  }
+  section > .top p, section h2 {
+    font-weight: 300;
+}

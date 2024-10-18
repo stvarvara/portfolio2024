@@ -1,0 +1,92 @@
+@import url("setup.css");
+
+// Variables
+$myFont: 'Plus Jakarta San', sans-serif;
+$mainViolet: #5669FF;
+$mainJeune: #FFD33C;
+$mainNoir: #222222;
+$mainGris: #878787;
+$mainBlanc: #FFFFFF;
+
+$hoverViolet: #9AA5FF;
+$selectedViolet: #273EFC;
+$selectedBlanc: #E1EBF4;
+
+$boutonPink: #DD69FA;
+$boutonGreen: #79DA7D;
+$boutonRouge: #FF6258;
+
+$h1Size: 4rem;
+$h2Size: 2.25rem;
+$h3Size: 2rem;
+$h4Size: 1.5rem;
+$h5Size: 1.25rem;
+$h55Size: 1rem;
+$h6Size: 0.75rem;
+
+$lightWeight: 300;
+$normalWeight: 400;
+$semiboldWeight: 600;
+$boldWeight: 700;
+$lineHeight: 1.5;
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    background-color: $mainBlanc;
+    border-radius: 0.75rem;
+    box-shadow: 4px 4px 16px rgba(18, 18, 18, 0.06);
+
+    img {
+        border-radius: 0.75rem 0.75rem 0 0;
+    }
+
+    .logement__wrapper_description {
+        margin: 1rem;
+
+        .logement__titre {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logement__nom {
+                color: $mainNoir;
+                font-size: $h55Size;
+                font-weight: $semiboldWeight;
+            }
+
+            .logement__note {
+                display: flex;
+                align-items: center;
+                font-size: $h55Size;
+                font-weight: $semiboldWeight;
+
+                i {
+                    margin-right: 0.5rem;
+                    color: $mainJeune;
+                }
+            }
+        }
+
+        .logement__localisation {
+            color: $mainGris;
+            font-size: $h55Size;
+            font-weight: $semiboldWeight;
+        }
+
+        .logement__prix__alignement {
+            display: flex;
+
+            h1 {
+                margin-right: 0.3rem;
+
+                &.logement__prix {
+                    font-size: $h55Size;
+                    font-weight: $semiboldWeight;
+                    color: $mainViolet;
+                }
+            }
+        }
+    }
+}

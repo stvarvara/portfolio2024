@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/verifier.css">
+    <title>Document</title>   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__container">
+                <div class="checkLogement">
+                    <h2>Vérifier la disponibilité</h2>
+                    <div class="checkLogement__tri">
+                        <div class="tri__element">
+                            <label for="dest-select">Destination</label>
+                            <div class="select-container">
+                                <button class="dropbtn" id="dropdown-btn">Où?</button>
+                                
+                              </div>
+                        </div>
+                        <div class="tri__element">
+                            <label for="daterange">Arrivée - Départ</label>
+                            <input type="text" id="daterange" name="daterange" value="01/01/2024 - 01/01/2036" />
+                        </div>
+                        <div class="tri__element">
+                            <label for="nb_personnes">Nombre de voyageurs</label>
+                            <input type="number" id="nb_personnes" placeholder="Qui?" name="nombre_personnes" min="1" max="13">
+                        </div>
+                        <div class="tri__element">
+                            <label for="tarif">Tarif/jour</label>
+                            <div id="tarif_range">
+                                <input type="number" placeholder="min" id="tarif_min" name="tarif_min" min="0" step="5">
+                                <input type="number" placeholder="max" id="tarif_max" name="tarif_max" min="0" step="5">
+                              </div>
+                        </div>
+                        <div class="tri__element">
+                            <label for="propr-select">Propriétaires</label>
+                                <select name="propr" id="propr-select">
+                                    <option value="">Le propriétaire</option>
+                                    <option value="Varvara">Varvara Sradnichenko</option>
+                                    <option value="AgenceParis">Agence Paris</option>
+                                </select>
+                        </div>
+                        <div class="tri__element">
+                            <input type="submit" value="Rechercher">
+                        </div>
+                    </div>
+                </div>
+                <div class="drops">
+                    <div class="dropdown" id="departments-dropdown-container">
+                        <div class="dropdown-content"  id="departments-dropdown">
+                          <input class="dropdown-element search" type="text" id="search-input-department"  placeholder="Département" >
+                          <label class="dropdown-element dep"><input type="checkbox" name="department" value="Ain" >Ain</label>
+                          <label class="dropdown-element dep"><input type="checkbox" name="department" value="Aisne" >Aisne</label>
+                        </div>
+                      </div>
+                      <div class="dropdown" id="communs-dropdown-container">
+                        <div class="dropdown-content" id="communes-dropdown">
+                          <input class="dropdown-element search" type="text" id="search-input-commune" placeholder="Commune" >
+                          <label class="dropdown-element"><input type="checkbox" name="commune" value="Bourg-en-Bresse" >Bourg-en-Bresse</label>
+                          <label class="dropdown-element"><input type="checkbox" name="commune" value="L'Abergement-Clémenciat" >L'Abergement-Clémenciat</label>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        const dropdownBtn = document.getElementById('dropdown-btn');
+        const dropdownContent = document.getElementById('departments-dropdown');
+        function showDropdownContent() {
+            dropdownContent.style.display = 'inline-flex';
+        }
+        function hideDropdownContent() {
+            const dropdownContent = document.getElementById('departments-dropdown');
+            const communesDropdown = document.getElementById('communes-dropdown');
+
+            if (!dropdownBtn.matches(':hover') && !dropdownContent.matches(':hover') && !communesDropdown.matches(':hover')) {
+                dropdownContent.style.display = 'none';
+                communesDropdown.style.display = 'none';
+            }
+        }
+        dropdownBtn.addEventListener('mouseenter', showDropdownContent);
+
+        document.addEventListener('mouseleave', hideDropdownContent);
+
+        const departmentCheckboxes = document.querySelectorAll('input[name="department"]');
+
+        function handleDepartmentSelection() {
+
+            departmentCheckboxes.forEach(function(checkbox) {
+                
+                checkbox.addEventListener('change', function() {
+                    
+                    if (this.checked) {
+                        const communesDropdown = document.getElementById('communes-dropdown');
+                        communesDropdown.style.display = 'inline-block';
+                    } else {
+                        const communesDropdown = document.getElementById('communes-dropdown');
+                        communesDropdown.style.display = 'none';
+                    }
+                });
+            });
+        }
+        handleDepartmentSelection();
+
+    </script>
+</body>
+<script src="js/verifier.js"></script>
+</html>

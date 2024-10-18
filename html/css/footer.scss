@@ -1,0 +1,71 @@
+@import url("setup.css");
+// Variables
+$myFont: 'Plus Jakarta San', sans-serif;
+$mainViolet: #5669FF;
+$mainJeune: #FFD33C;
+$mainNoir: #222222;
+$mainGris: #878787;
+$mainBlanc: #FFFFFF;
+
+$hoverViolet: #9AA5FF;
+$selectedViolet: #273EFC;
+$selectedBlanc: #E1EBF4;
+
+$boutonPink: #DD69FA;
+$boutonGreen: #79DA7D;
+$boutonRouge: #FF6258;
+
+$h1Size: 4rem;
+$h2Size: 2.25rem;
+$h3Size: 2rem;
+$h4Size: 1.5rem;
+$h5Size: 1.25rem;
+$h6Size: 0.75rem;
+
+$lightWeight: 300;
+$normalWeight: 400;
+$semiboldWeight: 600;
+$boldWeight: 700;
+$lineHeight: 1.5;
+/* Footer */
+.footer__container {
+    padding-bottom: 1rem;
+}
+
+.footer__menu__list {
+    list-style-type: disc;
+    display: flex;
+    gap: 0.9rem;
+    row-gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__menu__link {
+    font-weight: $normalWeight;
+    font-size: 1rem;
+}
+
+.footer__menu__link:hover {
+    color: $mainViolet;
+    text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+    .footer__menu__item-point {
+        display: none;
+    }
+
+    .footer__menu__item,
+    .footer__menu__link {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500.98px) {
+    .footer__menu__item,
+    .footer__menu__link {
+        font-size: 0.5rem;
+    }
+}

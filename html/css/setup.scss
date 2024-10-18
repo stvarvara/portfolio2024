@@ -1,0 +1,90 @@
+@import url("reset.css");
+
+// Variables
+$myFont: "Plus Jakarta San", sans-serif;
+$mainViolet: #5669ff;
+$mainJeune: #ffd33c;
+$mainNoir: #222222;
+$mainGris: #878787;
+$mainBlanc: #ffffff;
+
+$hoverViolet: #9aa5ff;
+$selectedViolet: #273efc;
+$selectedBlanc: #e1ebf4;
+
+$boutonPink: #dd69fa;
+$boutonGreen: #79da7d;
+$boutonRouge: #ff6258;
+
+$h1Size: 4rem;
+$h2Size: 2.25rem;
+$h3Size: 2rem;
+$h4Size: 1.5rem;
+$h5Size: 1.25rem;
+$h6Size: 0.75rem;
+
+$lightWeight: 300;
+$normalWeight: 400;
+$semiboldWeight: 600;
+$boldWeight: 700;
+$lineHeight: 1.5;
+
+// Page Setup
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+  padding-bottom: 5%;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: $myFont;
+  color: $mainNoir;
+  line-height: $lineHeight;
+}
+a {
+  cursor: pointer;
+}
+
+header {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+[class*="__container"] {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199.98px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: none;
+    padding: 0px 0.75rem;
+  }
+  header {
+    margin-bottom: 1rem;
+  }
+}
+input:focus, select:focus{
+  outline: 1px solid $mainViolet;
+}

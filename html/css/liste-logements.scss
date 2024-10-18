@@ -1,0 +1,288 @@
+@import url("setup.css");
+
+// Variables
+$myFont: "Plus Jakarta San", sans-serif;
+$mainViolet: #5669ff;
+$mainJaune: #ffd33c;
+$mainNoir: #222222;
+$mainGris: #878787;
+$mainBlanc: #ffffff;
+
+$hoverViolet: #9aa5ff;
+$selectedViolet: #273efc;
+$selectedBlanc: #e1ebf4;
+
+$boutonPink: #dd69fa;
+$boutonGreen: #79da7d;
+$boutonRouge: #ff6258;
+
+$h1Size: 4rem;
+$h2Size: 2.25rem;
+$h3Size: 2rem;
+$h4Size: 1.5rem;
+$h5Size: 1.25rem;
+$h55Size: 1rem;
+$h6Size: 0.75rem;
+
+$sizeIcone: 2.5em;
+$sizeLogement: 21em;
+
+$lightWeight: 300;
+$normalWeight: 400;
+$semiboldWeight: 600;
+$boldWeight: 700;
+$lineHeight: 1.5;
+
+div.main__container.logements {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-size: $h2Size;
+  }
+  & > div.titreLogement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    & > div:first-child {
+      align-items: center;
+      display: flex;
+      gap: 2.5rem;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+    & > a.ajouter {
+      display: flex;
+      align-items: center;
+      background-color: $mainViolet;
+      border-radius: 20px;
+      padding: 0.625rem 1.25rem;
+      gap: 0.625rem;
+      font-size: 1.25rem;
+      color: $mainBlanc;
+    }
+  }
+}
+
+.mes__reserv__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+
+  h4 {
+    font-size: $h4Size;
+    font-weight: $normalWeight;
+    color: $mainGris;
+    text-align: center;
+  }
+}
+
+.card_logement {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  & > div.card_main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    & > div.info_logement {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 1.875rem;
+      & > img {
+        width: 17rem;
+        max-width: 17rem;
+        min-width: 17rem;
+        object-fit: cover;
+        height: 12.5rem;
+        max-height: 12.5rem;
+      }
+      & > div.actionInfo {
+        display: flex;
+        width: 100%;
+        & > div.detaille_logement {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1.875rem;
+          width: 100%;
+
+          & > div.conteneur_info {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+            width: 80%;
+            flex-shrink: 0;
+            & > p.titre_logement {
+              font-size: $h4Size;
+              font-weight: $semiboldWeight;
+            }
+          }
+        }
+        & > div.actions {
+          display: flex;
+          & > div.edit {
+            border-radius: 0.75rem;
+            padding: 0.5rem;
+            background: #69c6fa;
+            align-self: center;
+            & > a {
+              & > img {
+                width: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.actifInactif {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  color: $mainBlanc;
+}
+.Actif,
+.Inactif {
+  display: flex;
+  justify-content: center;
+  padding: 15px 25px;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 20px;
+  width: 6rem;
+  height: 3rem;
+}
+
+.Actif {
+  background: $boutonGreen;
+}
+
+.Inactif {
+  background: $boutonRouge;
+}
+
+@media (max-width: 991.98px) {
+  .conteneur_info {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .actions {
+    gap: 1.875rem;
+  }
+  .actionInfo {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 633px) {
+  .actionInfo {
+    flex-direction: row;
+  }
+  .actions {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info_logement {
+    flex-direction: column;
+  }
+  .edit {
+    order: 1;
+  }
+  .actifInactif {
+    order: 2;
+  }
+  .titre_logement {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .actionInfo {
+    flex-direction: column;
+  }
+  .detaille_logement {
+    align-items: center;
+  }
+  .titre_logement {
+    text-align: center;
+  }
+  .actions {
+    flex-direction: row;
+  }
+  #complement1,
+  #complement2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 490px) {
+  .titreLogement {
+    flex-direction: column !important;
+    gap: 0.938rem;
+    align-items: flex-start !important;
+  }
+}
+
+.alert {
+  position: sticky;
+  color: $mainBlanc;
+  border-radius: 12px;
+  padding: 16px 22px 17px 20px;
+  display: flex;
+  align-items: center;
+  background-color: $mainViolet;
+  align-self: center;
+  bottom: 10px;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+  display: flex;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.hover:hover {
+  cursor: pointer;
+  background: $hoverViolet !important;
+}
+
+.hover.blue:hover {
+  background: #90d3fa !important;
+}
+.card_logement:hover{
+  border: 1px solid $hoverViolet;
+}
+.card_logement{
+  cursor: pointer;
+}

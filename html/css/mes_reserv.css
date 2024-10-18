@@ -1,0 +1,610 @@
+@import url("setup.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+:root {
+  --primary-color: #5669ff;
+  --secondary-color: #e6eef9;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  padding: 0.75rem;
+  border-radius: 99px;
+}
+.tabs * {
+  z-index: 2;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  width: 200px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transition: 0.15s ease-in;
+}
+
+input[type=radio]:checked + label {
+  color: var(--primary-color);
+}
+input[type=radio]:checked + label > .notification {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+input[id=radio-1]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+input[id=radio-2]:checked ~ .glider {
+  transform: translateX(100%);
+}
+
+input[id=radio-3]:checked ~ .glider {
+  transform: translateX(200%);
+}
+
+input[id=radio-4]:checked ~ .glider {
+  transform: translateX(300%);
+}
+
+.glider {
+  position: absolute;
+  display: flex;
+  height: 54px;
+  width: 200px;
+  background-color: var(--secondary-color);
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
+}
+
+@media (max-width: 750px) {
+  .mes__reserv__titre h1 {
+    font-size: 2rem;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__prix h4 {
+    font-size: 1.25rem !important;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__prix :last-child {
+    font-size: 1.5rem;
+  }
+  .card__reserv {
+    gap: 1rem;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description h4 {
+    font-size: 1rem;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description {
+    height: initial;
+    gap: 1rem;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description p {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 600px) {
+  .card__reserv img {
+    height: 100px;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description {
+    gap: 0.5rem;
+  }
+  .card__reserv {
+    align-items: center;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description h4 {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .card__reserv img {
+    display: none;
+  }
+  .mes__reserv__titre h1 {
+    font-size: 1.5rem;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description p {
+    padding: 0.3rem 0.5rem;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description h4 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__prix {
+    flex-direction: column;
+  }
+  .card__reserv .mes__reserv__date {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card__reserv .mes__reserv__date i {
+    display: none;
+  }
+  .card__reserv {
+    gap: 0rem;
+    padding: 0.5rem;
+  }
+  .mes__reserv__titre h1 {
+    font-size: 1.25rem;
+  }
+  .mes__reserv__titre img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+.icon-right {
+  margin-left: auto;
+  align-self: center;
+  background-color: #dd69fa;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.buisness_mes_reserv_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.buisness_mes_reserv_line .ligne__status {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 40%;
+  justify-content: space-between;
+}
+.buisness_mes_reserv_line .buisness_left_big_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 6rem;
+}
+.buisness_mes_reserv_line .buisness_left_big_box .buisness_left_box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.buisness_mes_reserv_line .buisness_left_big_box .buisness_left_box h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.buisness_mes_reserv_line .buisness_left_big_box .buisness_left_box > h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.buisness_mes_reserv_line .buisness_left_big_box .buisness_left_box h5 {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.buisness_mes_reserv_line .buisness_left_big_box .buisness_left_box .mes_reserv__numero {
+  display: flex;
+  align-items: center;
+}
+.buisness_mes_reserv_line h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.buisness_mes_reserv_line p {
+  color: #ffffff;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.buisness_mes_reserv_line .green {
+  background-color: #79da7d;
+}
+.buisness_mes_reserv_line .red {
+  background-color: #ff6258;
+}
+
+.mes__reserv__titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  height: -moz-max-content;
+  height: max-content;
+}
+.mes__reserv__titre h1 {
+  font-size: 2.25rem;
+}
+.mes__reserv__titre img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.card__reserv {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+.card__reserv .mes__reserv__cont_desc_prix {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description h4 {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description > h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description p {
+  color: #ffffff;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description .green {
+  background-color: #79da7d;
+}
+.card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description .red {
+  background-color: #ff6258;
+}
+.card__reserv .mes__reserv__cont_desc_prix .mes__reserv__prix {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.card__reserv .mes__reserv__cont_desc_prix .mes__reserv__prix :last-child {
+  font-size: 2rem;
+  color: #5669ff;
+}
+.card__reserv .mes__reserv__cont_desc_prix .mes__reserv__prix .mes__reserv__prix_color {
+  color: #222222;
+}
+.card__reserv img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+}
+.card__reserv .mes__reserv__date i {
+  font-size: 0.4rem;
+}
+.card__reserv .mes__reserv__date {
+  align-items: center;
+}
+.card__reserv .mes_reserv__numero,
+.card__reserv .mes__reserv__date {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.mes__reserv__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.mes__reserv__empty h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #878787;
+  text-align: center;
+}
+
+.mes__reserv__exporter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.test__TEST {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (max-width: 1000.98px) {
+  .mes__reserv__titre {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .tab,
+  .glider {
+    width: 180px;
+  }
+}
+@media (max-width: 770.98px) {
+  .card__reserv {
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    align-items: center;
+  }
+  .tab,
+  .glider {
+    width: 150px;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__prix :last-child {
+    font-size: 1.5rem;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description > h4,
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description h4 {
+    font-size: 1.2rem;
+  }
+  .card__reserv .mes__reserv__date {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card__reserv .mes__reserv__date i {
+    display: none;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description {
+    gap: 0.8rem;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description > h4,
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description h4 {
+    font-size: 1rem;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description > h4,
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description h4 {
+    font-size: 1rem;
+  }
+  .card__reserv img {
+    height: 170px;
+    width: 180px;
+  }
+}
+@media (max-width: 636.98px) {
+  .tabs {
+    flex-direction: column;
+    border-radius: 5%;
+    padding: 0.5rem;
+    position: sticky;
+    top: 30px;
+  }
+  .mes__reserv__titre {
+    flex-direction: row;
+    padding-top: 1rem;
+  }
+  .mes__reserv__titre h1 {
+    font-size: 1.5rem;
+  }
+  .glider {
+    display: none;
+  }
+  .tab {
+    width: 130px;
+    height: 40px;
+    justify-content: space-between;
+  }
+  .card__reserv {
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+  }
+  .card__reserv img {
+    width: 100%;
+  }
+  .mes__reserv__titre {
+    height: 50px;
+  }
+}
+@media (max-width: 536.98px) {
+  .tab {
+    width: 110px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .tabs {
+    gap: 0.8rem;
+  }
+  .card__reserv {
+    flex-direction: column;
+    width: 60%;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 500.98px) {
+  .card__reserv .mes__reserv__cont_desc_prix {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .card__reserv {
+    width: 70%;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__prix :last-child {
+    color: #5669ff;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description {
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 450.98px) {
+  .tab {
+    width: 90px;
+    height: 20px;
+    font-size: 0.8rem;
+  }
+  .notification {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.35rem;
+  }
+  .card__reserv .mes__reserv__cont_desc_prix .mes__reserv__description p {
+    padding: 0.3rem 1rem;
+  }
+}
+.mes__reserv__titre {
+  padding-top: 2rem;
+}
+
+@media (max-width: 1200.98px) {
+  .buisness_mes_reserv_line .buisness_left_big_box {
+    gap: 4rem;
+  }
+  .buisness_mes_reserv_line .ligne__status {
+    width: 70%;
+  }
+}
+@media (max-width: 1000.98px) {
+  .buisness_mes_reserv_line .buisness_left_big_box {
+    gap: 2rem;
+  }
+  .buisness_mes_reserv_line p {
+    font-size: 0.8rem;
+  }
+  .buisness_mes_reserv_line h4 {
+    font-size: 1.2rem;
+  }
+  .buisness_mes_reserv_line .buisness_left_big_box .buisness_left_box h5,
+  .buisness_mes_reserv_line .buisness_left_big_box .buisness_left_box h4 {
+    font-size: 1rem;
+  }
+  .icon-right {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .buisness_mes_reserv_line .buisness_left_big_box {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+@media (max-width: 640.98px) {
+  .mes__reserv__titre {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .buisness_mes_reserv_line .ligne__status {
+    width: 80%;
+  }
+  .buisness_mes_reserv_line h4 {
+    font-size: 1rem;
+  }
+  .buisness_mes_reserv_line p {
+    text-align: center;
+  }
+  .icon-right {
+    padding: 0.75rem;
+  }
+  .buisness_mes_reserv_line .buisness_left_big_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .icon-right {
+    margin: initial;
+    align-self: flex-start;
+  }
+  .buisness_mes_reserv_line .ligne__status {
+    width: 100%;
+  }
+}
+@media (max-width: 500.98px) {
+  .buisness_mes_reserv_line .ligne__status {
+    flex-direction: column;
+    width: 60%;
+  }
+  .buisness_mes_reserv_line .buisness_left_big_box {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .buisness_mes_reserv_line .ligne__status {
+    gap: 1rem;
+  }
+  .buisness_mes_reserv_line .buisness_left_big_box .buisness_left_box {
+    gap: 0.3rem;
+  }
+  .buisness_mes_reserv_line .buisness_left_big_box {
+    gap: 0.5rem;
+  }
+  .buisness_mes_reserv_line .buisness_left_big_box .buisness_left_box h5,
+  .buisness_mes_reserv_line .buisness_left_big_box .buisness_left_box h4,
+  .buisness_mes_reserv_line h4 {
+    font-size: 0.8rem;
+  }
+}
+.mes_reserv__numero h5 {
+  color: #5669ff;
+}
+
+.hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
+.hover.pink:hover {
+  background-color: #efadff !important;
+}/*# sourceMappingURL=mes_reserv.css.map */

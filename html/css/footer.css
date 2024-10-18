@@ -1,0 +1,41 @@
+@import url("setup.css");
+/* Footer */
+.footer__container {
+  padding-bottom: 1rem;
+}
+
+.footer__menu__list {
+  list-style-type: disc;
+  display: flex;
+  gap: 0.9rem;
+  row-gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__menu__link {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.footer__menu__link:hover {
+  color: #5669FF;
+  text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+  .footer__menu__item-point {
+    display: none;
+  }
+  .footer__menu__item,
+  .footer__menu__link {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500.98px) {
+  .footer__menu__item,
+  .footer__menu__link {
+    font-size: 0.5rem;
+  }
+}/*# sourceMappingURL=footer.css.map */

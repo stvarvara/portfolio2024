@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/logement.css" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/7f17ac2dfc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__nav">
+            <div class="header__logo">
+              <a href=""><img src="img/trisquel.webp" alt="Logo trisquel" /></a>
+              <a href="" class="header__name">ALHaiZ Breizh</a>
+            </div>
+            <nav class="header__menu" id="LeMenu">
+              <ul class="menu__list" id="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link">Logements</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">À propos</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Contact</a>
+                </li>
+                <li class="menu__item hide">
+                  <a href="" class="menu__link" style="color: #5669ff"
+                    >Connexion</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__form">
+            <a href=""
+              ><i class="fa-regular fa-eye-slash" style="color: #222222"></i
+            ></a>
+            <div class="header__connexion"><a href="">Connexion</a></div>
+          </div>
+          <img
+            src="img/menu.webp"
+            alt="Afficher/Masquer le Menu"
+            id="CmdMenu"
+          />
+          <img src="img/fermer.webp" alt="Fermer le menu" id="CmdMenuClose" />
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__container logement">
+          <div class="logement__top">
+            <div class="logement__nom">
+              <div class="nom">
+                <h1 id="logement__nom">Ô gîte de la plage</h1>
+                <div class="stars" id="logement__rate">
+                  <i class="fas fa-star fa-lg" id="1star"></i>
+                  <i class="fas fa-star fa-lg" id="2star"></i>
+                  <i class="fas fa-star fa-lg" id="3star"></i>
+                  <i class="fas fa-star fa-lg" id="4star"></i>
+                  <i class="fas fa-star fa-lg" id="5star"></i>
+                </div>
+                <h6 id="logement__rate__valuernote">5</h6>
+                <a class="retour" href="" id="logement__retour"
+                  ><img src="img/back.webp" alt="Retour"
+                /></a>
+              </div>
+              <div class="partager">
+                <img src="img/share.webp" alt="Partager" />
+                <a href="">Partager</a>
+              </div>
+            </div>
+            <div class="logement__adr">
+              <h2 id="logement__adresse">Pléneuf-Val-André, Côtes-d'Armor</h2>
+              <a href="#logement__verifier">Réserver</a>
+            </div>
+          </div>
+          <div class="logement__photos">
+            <div class="photo__grille" id="logement__photo__grille">
+              <img src="img/log1.webp" alt="Logement" />
+              <img src="img/log6.webp" alt="Logement" />
+              <img src="img/log3.webp" alt="Logement" />
+              <img src="img/log4.webp" alt="Logement" />
+              <img src="img/log5.webp" alt="Logement" />
+            </div>
+          </div>
+          <div class="logement-container">
+            <div class="logement__details">
+              <div class="details__top">
+                <div class="details__nom">
+                  <h2 id="log__nom">Ô gîte de la plage</h2>
+                  <h2 id="log__details">chalet contemporain de 40m2</h2>
+                </div>
+                <div class="details__features" id="features">
+                  <div class="feature">Chalet</div>
+                  <div class="feature">T1</div>
+                  <div class="feature">40m²</div>
+                  <div class="feature">1 chambre</div>
+                  <div class="feature">2 voyageurs</div>
+                  <div class="feature">1 lit double</div>
+                </div>
+                <h3>Ce logement vous propose</h3>
+                <div class="logement__proposNote">
+                  <div class="logement__propose">
+                    <ul>
+                      <li class="proposition">Vue sur la baie</li>
+                      <li class="proposition">Accès plage</li>
+                      <li class="proposition">Wifi</li>
+                      <li class="proposition">Télévision</li>
+                      <li class="proposition">Lave-linge</li>
+                      <li class="proposition">Vue sur l'océan</li>
+                      <li class="proposition">Cuisine</li>
+                      <li class="proposition">Parking gratuit sur place</li>
+                      <li class="proposition">Ascenseur</li>
+                      <li class="proposition">Sèche-linge</li>
+                    </ul>
+                    <a href="">Conditions d’annulation</a>
+                  </div>
+                  <div class="logement__note">
+                    <h2 id="note">4.8</h2>
+                    <div class="details__stars" id="logement__rate__details">
+                      <i class="fas fa-star fa-lg" id="1star_details"></i>
+                      <i class="fas fa-star fa-lg" id="2star_details"></i>
+                      <i class="fas fa-star fa-lg" id="3star_details"></i>
+                      <i class="fas fa-star fa-lg" id="4star_details"></i>
+                      <i class="fas fa-star fa-lg" id="5star_details"></i>
+                    </div>
+                    <a href=""><span id="nb_comment">21</span>Commentaires</a>
+                  </div>
+                </div>
+              </div>
+              <div class="apropos">
+                <h3>À propos de ce logement</h3>
+                <p id="logement__descipt">
+                  Ô Gite de la plage est un chalet contemporain de 40m2 avec
+                  terrasse, SPA et SAUNA * à 300m de la plage de St Pabu. Vous
+                  trouverez tout le confort à l'intérieur dans une ambiance
+                  chaleureuse et nature. Des balades au bord de l'eau ou en
+                  campagne pour vous ressourcer.Sport de glisses et parapente au
+                  pied du gîte! Sport de glisses et parapente au pied du gîte!
+                </p>
+                <button id="decouvrir">Découvrir plus</button>
+              </div>
+              <div class="hote">
+                <div class="hote__info">
+                  <img src="img/user.webp" alt="Hôte" id="hote__photo" />
+                  <div class="hote__main">
+                    <div class="hote__nom">
+                      <h3>Hôte: <span id="hote__nm">Cyril</span></h3>
+                      <div class="hote_rate" id="hote__rate">
+                        <i class="fas fa-star fa-xs"></i>
+                        <i class="fas fa-star fa-xs"></i>
+                        <i class="fas fa-star fa-xs"></i>
+                        <i class="fas fa-star fa-xs"></i>
+                        <i class="fas fa-star fa-xs"></i>
+                      </div>
+                      <h6 id="hote__valuernote">4</h6>
+                    </div>
+                    <div class="hote__langues">
+                      <i
+                        class="fa-solid fa-earth-americas"
+                        style="color: #222222"
+                      ></i>
+                      <ul>
+                        <li>Anglais</li>
+                        <li>Français</li>
+                        <li>Espagnol</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="asavoir">
+                  <h2>À savoir</h2>
+                  <a href="">Conditions de séjour dans сe logement</a>
+                  <h3>Moyens de paiement acceptés : PayPal, carte bancaire</h3>
+                </div>
+              </div>
+              <div class="environs">
+                <div class="environs__map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6114.127142155644!2d-2.515209312212884!3d48.60120043885394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480e0e90a5504f43%3A0x40ca5cd36e62fc0!2zMjIzNzAg0J_Qu9C10L3QtdGELdCS0LDQu9GMLdCQ0L3QtNGA0LU!5e0!3m2!1suk!2sfr!4v1715798476218!5m2!1suk!2sfr"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div class="environs__details">
+                  <h3>Environs de l'établissement</h3>
+                  <div class="environs__ligne">
+                    <p class="environ">Le golf de Pléneuf-Val-André</p>
+                    <p class="dest">sur place</p>
+                  </div>
+                  <div class="environs__ligne">
+                    <p class="environ">Vol parapente tandem</p>
+                    <p class="dest">sur place</p>
+                  </div>
+                  <div class="environs__ligne">
+                    <p class="environ">Balade en bateau</p>
+                    <p class="dest">moins de 5 km</p>
+                  </div>
+                  <div class="environs__ligne">
+                    <p class="environ">Le Spa Marin</p>
+                    <p class="dest">moins de 5 km</p>
+                  </div>
+                  <div class="environs__ligne">
+                    <p class="environ">Le casino du Val-André</p>
+                    <p class="dest">moins de 10 km</p>
+                  </div>
+                  <div class="environs__ligne">
+                    <p class="environ">La plage du Val-André</p>
+                    <p class="dest">moins de 10 km</p>
+                  </div>
+                </div>
+              </div>
+              <div class="avis">
+                <h3>Les avis des clients</h3>
+                <div class="lesavis">
+                  <div class="avis__element">
+                    <div class="avis__top">
+                      <div class="avis__user">
+                        <img src="img/user.webp" alt="User" />
+                        <div class="user__nom">
+                          <h5>Pierre</h5>
+                          <h6>Paris, France</h6>
+                        </div>
+                      </div>
+                      <div class="avis__note">
+                        <div class="avis_rate">
+                          <i class="fas fa-star fa-xs" id="avis__1star"></i>
+                          <i class="fas fa-star fa-xs" id="avis__2star"></i>
+                          <i class="fas fa-star fa-xs" id="avis__3star"></i>
+                          <i class="fas fa-star fa-xs" id="avis__4star"></i>
+                          <i class="fas fa-star fa-xs" id="avis__5star"></i>
+                        </div>
+                        <h6 id="avis__date">juin 2023</h6>
+                      </div>
+                    </div>
+                    <p>
+                      Nous avons passé un excellent séjour dans ce superbe
+                      appartement avec une vue magnifique, à quelques minutes de
+                      la plage et de superbes promenades côtières. Le restaurant
+                      d'à côté vaut également le détour.
+                    </p>
+                  </div>
+                  <div class="avis__element">
+                    <div class="avis__top">
+                      <div class="avis__user">
+                        <img src="img/user.webp" alt="User" />
+                        <div class="user__nom">
+                          <h5>Mohamed</h5>
+                          <h6>Dakar, Sénégal</h6>
+                        </div>
+                      </div>
+                      <div class="avis__note">
+                        <div class="avis_rate">
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                        </div>
+                        <h6 id="avis__date">juin 2023</h6>
+                      </div>
+                    </div>
+                    <p>
+                      Deuxième séjour dans ce petit nid et toujours aussi
+                      ravi.Ne dit on pas jamais deux sans trois....
+                    </p>
+                  </div>
+                  <div class="avis__element">
+                    <div class="avis__top">
+                      <div class="avis__user">
+                        <img src="img/user.webp" alt="User" />
+                        <div class="user__nom">
+                          <h5>Greta</h5>
+                          <h6>Berlin, Allemagne</h6>
+                        </div>
+                      </div>
+                      <div class="avis__note">
+                        <div class="avis_rate">
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                        </div>
+                        <h6 id="avis__date">juin 2023</h6>
+                      </div>
+                    </div>
+                    <p>
+                      Magnifique gîte proche de la mer et d’une propreté
+                      irréprochable!!! Cyril est un hôte très sympathique et
+                      réactif aux demandes!! À conseiller sans modération!
+                    </p>
+                  </div>
+                  <div class="avis__element">
+                    <div class="avis__top">
+                      <div class="avis__user">
+                        <img src="img/user.webp" alt="User" />
+                        <div class="user__nom">
+                          <h5>James</h5>
+                          <h6>Angleterre, Royaume-Uni</h6>
+                        </div>
+                      </div>
+                      <div class="avis__note">
+                        <div class="avis_rate">
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                          <i class="fas fa-star fa-xs"></i>
+                        </div>
+                        <h6 id="avis__date">juin 2023</h6>
+                      </div>
+                    </div>
+                    <p>
+                      Endroit magnifique avec un hôte parfait... le logement est
+                      un véritable havre de paix et les alentours sont
+                      exceptionnels, même à pieds.. Deuxième séjour dans ce
+                      petit nid et toujours aussi ravi.Ne dit on pas jamais deux
+                      sans trois....
+                    </p>
+                  </div>
+                </div>
+                <button id="decouvrir__avis">Découvrir plus</button>
+              </div>
+            </div>
+            <div class="logement__reserver">
+              <div class="logement__res" id="logement__verifier">
+                <h2>Indiquez les dates pour voir les tarifs</h2>
+                <form action="">
+                  <div class="res__fromulaire">
+                    <div class="res__dates">
+                      <div class="res__arrive">
+                        <label for="reservArr">Arrivée</label>
+                        <input
+                          type="date"
+                          name="reservArr"
+                          id="reservArr"
+                          value="2024-05-30"
+                          min="2024-05-30"
+                          required
+                        />
+                      </div>
+                      <div class="res__dep">
+                        <label for="reservDep">Départ</label>
+                        <input
+                          type="date"
+                          name="reservDep"
+                          id="reservDep"
+                          value="2024-05-30"
+                          min="2024-05-30"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="res__voy">
+                      <label for="nb_personnes">Voyageurs</label>
+                      <input
+                        type="number"
+                        id="nb_personnes"
+                        placeholder="1 voyageur"
+                        name="nombre_personnes"
+                        min="1"
+                        max="13"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <input type="submit" value="Vérifier la disponibilité" />
+                </form>
+              </div>
+              <div class="logement__res" id="logement__reserver">
+                <h2><span id="logement__prix">286</span> € par nuit</h2>
+                <form action="">
+                  <div class="res__fromulaire">
+                    <div class="res__dates">
+                      <div class="res__arrive">
+                        <label for="reservArrDevis">Arrivée</label>
+                        <input
+                          type="date"
+                          name="reservArrDevis"
+                          id="reservArrDevis"
+                          value="2024-05-30"
+                          min="2024-05-30"
+                          required
+                        />
+                      </div>
+                      <div class="res__dep">
+                        <label for="reservDepDevis">Départ</label>
+                        <input
+                          type="date"
+                          name="reservDepDevis"
+                          id="reservDepDevis"
+                          value="2024-05-30"
+                          min="2024-05-30"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="res__voy">
+                      <label for="nb_personnesDevis">Voyageurs</label>
+                      <input
+                        type="number"
+                        id="nb_personnesDevis"
+                        placeholder="1 voyageur"
+                        name="nombre_personnesDevis"
+                        min="1"
+                        max="13"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="logement__calcules">
+                    <div class="calcules__ligne">
+                      <div class="ttc__jours">
+                        <p id="base_tarif_pour_nuit" class="calcules__under">286</p>
+                        <p class="calcules__under">€ x</p>
+                        <p id="nb_jours" class="calcules__under">5</p>
+                        <p class="calcules__under">jours</p>
+                      </div>
+                      <div class="ttc_prix">
+                        <p id="prix__total">1430</p>
+                        <p>€ TTC</p>
+                      </div>
+                    </div>
+                    <div class="calcules__ligne">
+                      <p class="calcules__under">Frais</p>
+                      <div class="frais">
+                        <p id="frais__total">14,3 </p>
+                        <p>€</p>
+                      </div>
+                    </div>
+                    <div class="calcules__ligne">
+                      <p class="calcules__under">Taxes</p>
+                      <div class="frais">
+                        <p id="taxes__total">14,4 </p>
+                        <p>€</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="logement__total-ttc">
+                    <p>Total TTC</p>
+                    <p><span id="tot-ttc">1 458,7 </span>€</p>
+                  </div>
+                  <input type="submit" value="Réserver" />
+                  <input type="submit" id="reset" value="Annuler" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <nav class="footer__menu">
+            <ul class="footer__menu__list">
+              <li class="footer__menu__item">© 2024 ALHalZ Breizh</li>
+              <li class="footer__menu__item footer__menu__item-point">·</li>
+              <li class="footer__menu__item">
+                <a href="" class="footer__menu__link">Confidentialité</a>
+              </li>
+              <li class="footer__menu__item footer__menu__item-point">·</li>
+              <li class="footer__menu__item">
+                <a href="" class="footer__menu__link">Conditions générales</a>
+              </li>
+              <li class="footer__menu__item footer__menu__item-point">·</li>
+              <li class="footer__menu__item">
+                <a href="" class="footer__menu__link">Mentions légales</a>
+              </li>
+              <li class="footer__menu__item footer__menu__item-point">·</li>
+              <li class="footer__menu__item">
+                <a href="" class="footer__menu__link">Accessibilité</a>
+              </li>
+              <li class="footer__menu__item footer__menu__item-point">·</li>
+              <li class="footer__menu__item">
+                <a href="" class="footer__menu__link"
+                  >Ajouter mon établissement</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

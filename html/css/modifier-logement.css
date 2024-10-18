@@ -1,0 +1,374 @@
+@import url("setup.css");
+.main__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+.main__container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+.main__container > .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.main__container > .top > div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.main__container > .top > div img {
+  max-width: 2.5em;
+  margin-left: 1.1em;
+}
+.main__container > .top > i {
+  font-size: 1.875rem;
+}
+.main__container h1 {
+  text-align: left;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  border: #222222 1px solid;
+  box-shadow: 4px 4px 10px rgba(27, 27, 27, 0.319);
+  padding: 1rem;
+}
+section > .top p,
+section h2 {
+  margin-left: 0.5rem;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+section > .top {
+  flex-direction: column;
+}
+section > .top p {
+  font-size: 1rem;
+}
+section .container {
+  padding: 0.5rem;
+  width: 100%;
+}
+section .container #image-preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+section .container #image-preview img {
+  width: 10rem;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section .container #image-preview div {
+  position: relative;
+}
+section .container #image-preview div button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #ff6258;
+}
+section .field-container {
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+section .field-container.check__list {
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+section .field-container .input__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+section .field-container .full-size {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section .field-container .full-size .info_gen__input {
+  width: 48%;
+}
+section .field-container .info_gen__input {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+@media screen and (max-width: 600px) {
+  section .field-container .info_gen__input {
+    width: 100%;
+  }
+}
+section .field-container .info_gen__input.adresse {
+  width: 65%;
+}
+section .field-container .info_gen__input .input__input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section .field-container .info_gen__input .input__input input {
+  width: 45%;
+}
+section .field-container .info_gen__input .input__input div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+section .field-container .info_gen__input .input__input div input {
+  width: 95%;
+}
+section .field-container .amenagement__input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+section .field-container .amenagement__input input {
+  width: 35%;
+}
+section .field-container .amenagement__input select {
+  width: 20%;
+}
+@media screen and (max-width: 600px) {
+  section .field-container .amenagement__input select {
+    width: 42%;
+  }
+}
+section .field-container #list__amenagement {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+section .field-container #list__amenagement div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+section .field-container #list__amenagement div .btn__remove, section .field-container #list__amenagement div .btn__remove_edit {
+  color: #ff6258;
+}
+section .field-container #list__amenagement div p {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+section .field-container #list__amenagement div span {
+  font-weight: 200;
+  text-transform: lowercase;
+}
+section#section__image {
+  gap: 1rem;
+}
+section#section__image input[type=button] {
+  background-color: #79da7d;
+  color: #ffffff;
+  width: 30%;
+  border: none;
+}
+
+input:not([type=checkbox]),
+select,
+option,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #222;
+  background: #fff;
+}
+
+textarea {
+  padding: 0.55em;
+}
+
+textarea::-moz-placeholder, input:not([type=checkbox])::-moz-placeholder {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 1rem;
+}
+
+textarea::placeholder,
+input:not([type=checkbox])::placeholder {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 1rem;
+}
+
+select {
+  border-radius: 0.75rem;
+  border: 1px solid #222;
+  padding: 1rem;
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 1rem;
+  font-weight: 300;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../img/down.webp");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.8rem auto;
+}
+
+.ajouter,
+.envoyer {
+  cursor: pointer;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  width: 10%;
+  background-color: #79da7d;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .ajouter,
+  .envoyer {
+    width: 18%;
+  }
+}
+
+.envoyer {
+  width: 25%;
+  height: 40px;
+  background-color: #5669ff;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #5669ff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading__modal {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 4;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#form__preview {
+  background-color: #dd69fa;
+}
+
+.logement__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.logement__empty h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #878787;
+  text-align: center;
+}
+
+.main__container > .top {
+  padding-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main__container > .top {
+    padding-top: 1rem;
+  }
+  section > .top p, section h2 {
+    font-size: 1.5rem;
+  }
+  section .field-container .full-size .info_gen__input {
+    width: 100%;
+  }
+  section .field-container .info_gen__input.adresse {
+    width: 100%;
+  }
+  .envoyer {
+    padding: 1rem;
+    width: 40%;
+  }
+  .main__container form {
+    padding-bottom: 1.5rem;
+  }
+  section#section__image input[type=button] {
+    width: 100%;
+  }
+  section .field-container .amenagement__input {
+    flex-wrap: wrap;
+  }
+  .ajouter {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .main__container h1 {
+    font-size: 2rem;
+  }
+}
+.main__container form {
+  padding-bottom: 2rem;
+}
+
+section > .top p, section h2 {
+  font-weight: 300;
+}/*# sourceMappingURL=modifier-logement.css.map */

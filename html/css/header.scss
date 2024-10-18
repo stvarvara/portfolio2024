@@ -1,0 +1,369 @@
+@import url("setup.css");
+// Variables
+$myFont: 'Plus Jakarta San', sans-serif;
+$mainViolet: #5669FF;
+$mainJeune: #FFD33C;
+$mainNoir: #222222;
+$mainGris: #878787;
+$mainBlanc: #FFFFFF;
+
+$hoverViolet: #9AA5FF;
+$selectedViolet: #273EFC;
+$selectedBlanc: #E1EBF4;
+
+$boutonPink: #DD69FA;
+$boutonGreen: #79DA7D;
+$boutonRouge: #FF6258;
+
+$h1Size: 4rem;
+$h2Size: 2.25rem;
+$h3Size: 2rem;
+$h4Size: 1.5rem;
+$h5Size: 1.25rem;
+$h55Size: 1rem;
+$h6Size: 0.75rem;
+
+$lightWeight: 300;
+$normalWeight: 400;
+$semiboldWeight: 600;
+$boldWeight: 700;
+$lineHeight: 1.5;
+// Header
+
+.buisness {
+    &.header {
+        background-color: $mainViolet;
+    }
+
+    .header__name {
+        color:$mainBlanc;
+    }
+
+    .header__form {
+        i {
+            color: $mainBlanc;
+        }
+        #header__info {
+            background-color: $mainBlanc;
+            color: $mainNoir;
+            border: none;
+    
+            &:hover {
+                background-color: $mainBlanc;
+                border: none;
+                color: $mainViolet;
+            }
+        }
+    }
+
+}
+.header__container {
+    padding-top: 1rem;
+    display: flex;
+    row-gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.header__nav {
+    display: flex;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo {
+    max-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.header__logo img {
+    max-width: 100%;
+    height: 50px;
+}
+
+.header__name {
+    color: $mainViolet;
+    text-transform: lowercase;
+    font-size: $h5Size;
+    letter-spacing: 3px;
+    font-weight: $boldWeight;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__item .menu__link {
+    font-weight: $normalWeight;
+    font-size: $h5Size;
+}
+
+.menu__link:hover {
+    color: $mainViolet;
+    text-decoration: underline;
+}
+#CmdMenuClose, #CmdMenu, #fermerMenu{
+    cursor: pointer;
+}
+.header__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    
+    i {
+        color: #222222;
+    }
+}
+
+.header__connexion {
+    line-height: normal;
+    padding: 0.6rem;
+    border-radius: 0.625rem;
+    border: 1px solid #222;
+    font-weight: $normalWeight;
+}
+.header__connexion,  #header__info{
+    cursor: pointer;
+}
+.header__connexion:hover,  #header__info:hover  {
+    border: 1px solid $mainViolet;
+    background-color: $mainViolet;
+    color: $mainBlanc;
+}
+.header__form  i {
+    font-size: 1.5rem !important;
+    color: $mainNoir;
+}
+@media (max-width: 900.98px) {
+    .menu__item .menu__link,
+    .header__connexion a, .user__info p {
+        font-size: $h55Size;
+    }
+    .menu__list {
+        column-gap: 20px;
+    }
+    .header__name{
+        width: min-content;
+    }
+}
+@media (max-width: 767.98px) {
+    #LeMenu {
+        display: none;
+        }
+    .menu__item .menu__link,
+    .header__connexion a, .user__info p {
+        font-size: $h6Size;
+    }
+
+    .menu__list {
+        column-gap: 20px;
+    }
+
+    .header__logo img {
+        height: 40px;
+    }
+
+    .header__name {
+        font-size: $h6Size;
+    }
+
+
+
+    .header__connexion, #header__info{
+        padding: 3px 10px !important;
+    }
+    .user__photo{
+        display: none;
+    }
+    .header__logo .header__name {
+        letter-spacing: 1px;
+        font-size: $h6Size;
+        font-weight: 600;
+    }
+
+    .header__logo img {
+        height: 30px;
+    }
+
+    .header__logo {
+        display: block;
+    }
+
+    .header__nav {
+        align-items: initial;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 570.98px) {
+
+    .header__form {
+        display: none;
+    }
+    .header__form {
+        display: inline;
+    }
+    #CmdMenuClose, #CmdMenu, #fermerMenu{
+        display: none;
+    }
+
+
+    .hide {
+        display: inline;
+    }
+}
+#CmdMenuClose{
+    display: none;
+}
+@media (max-width: 530px) {
+    #LeMenu {
+    display: none;
+    }
+    .menu__item .menu__link {
+        padding: 0.3125rem;
+
+    }
+    .header__logo .header__name {
+        font-size: $h5Size;
+        letter-spacing: 3px;
+    }
+
+
+    .menu__list {
+        flex-direction: column;
+    }
+
+    #CmdMenu, #CmdMenuClose {
+        height: 20px;
+        z-index: 100;
+        //display: initial;
+    }
+
+    .menu__item{
+        display: none;
+    }
+     .menu__item{
+        display: initial;
+    }
+    .menu__item.hide{
+        width: 100%;
+        display: inline;
+    }
+    .card__reserv {
+        gap: 0rem;
+    }
+}
+
+
+
+@media (min-width: 769px) {
+    #CmdMenu {
+        display: none;
+    }
+}
+#header__info {
+    border: 1px solid $mainNoir;
+    border-radius: 0.625rem;
+    padding: 0.5rem;
+  }
+  
+  .user__info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .user__photo {
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%; 
+    margin-right: 0.5rem;
+    object-fit: cover;
+  }
+
+  .user__down{
+    width: 10px !important ; 
+    height: 10px !important;
+    margin-left: 5px;
+  }
+
+.header__connexion img{
+    border-radius: 50%;
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+}
+
+
+// menu utilisateur 
+#menu-user{
+    z-index: 100;
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 2rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    background: #FFF;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid $mainGris;
+    box-shadow: 4px 4px 16px 0px rgba(18, 18, 18, 0.06);
+}
+#menu-user .menu__item .menu__link {
+    font-weight: $normalWeight;
+    font-size: $h5Size;
+}
+#fermerMenu {
+    height: 20px;
+    z-index: 100;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+@media (max-width: 767.98px) {
+    #menu-user  {
+        top: 50px;
+        padding: 0.8rem;
+        right: 1rem;
+    }
+    #menu-user .menu__item .menu__link {
+        font-weight: $normalWeight;
+        font-size: $h6Size;
+        line-height: normal;
+    }
+    #fermerMenu{
+        height: 15px;
+        top: 15px;
+    }
+    header{
+        padding: 1rem;
+    }
+}
+header.buisness{
+    .header__connexion{
+        border: 1px solid $mainBlanc;
+        color: $mainBlanc;
+    }
+    .header__form a i{
+        color:$mainBlanc;
+    }
+}
+.header {
+    margin-bottom: 0px;
+}

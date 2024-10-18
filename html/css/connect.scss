@@ -1,0 +1,409 @@
+@import url("setup.css");
+// Variables
+$myFont: "Plus Jakarta San", sans-serif;
+$mainViolet: #5669ff;
+$mainJeune: #ffd33c;
+$mainNoir: #222222;
+$mainGris: #878787;
+$mainBlanc: #ffffff;
+
+$hoverViolet: #9aa5ff;
+$selectedViolet: #273efc;
+$selectedBlanc: #e1ebf4;
+
+$boutonPink: #dd69fa;
+$boutonGreen: #79da7d;
+$boutonRouge: #ff6258;
+
+$h1Size: 4rem;
+$h2Size: 2.25rem;
+$h3Size: 2rem;
+$h4Size: 1.5rem;
+$h5Size: 1.25rem;
+$h55Size: 1rem;
+$h6Size: 0.75rem;
+
+$lightWeight: 300;
+$normalWeight: 400;
+$semiboldWeight: 600;
+$boldWeight: 700;
+$lineHeight: 1.5;
+
+.connect-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+
+.connect__photo {
+  width: 40%;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(100%);
+  padding-top: 3rem;
+  position: sticky;
+  top: 200px;
+}
+
+.connect__photo:hover {
+  filter: none;
+}
+
+.connect__from {
+  width: 50%;
+  padding: 0rem 4rem 0rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.connect__from h1 {
+  font-style: $semiboldWeight;
+  font-size: $h2Size;
+  letter-spacing: 0.0225rem;
+}
+
+.connect__from p {
+  font-size: $h5Size;
+  line-height: 160%;
+  letter-spacing: 0.0125rem;
+}
+
+.connect__from form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.connect__input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.rel {
+  position: relative;
+}
+
+.connect__input label {
+  font-size: $h55Size;
+}
+
+.rel {
+  width: 45%;
+
+  input {
+    width: 100% !important;
+  }
+}
+
+.connect__input input,
+.connect__input select {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #222;
+  background: #fff;
+}
+
+.connect__input select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.connect__input input::placeholder,
+.connect__input select,
+.connect__from input[type="date"],
+.connect__from input[type="file"] {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: $h55Size;
+}
+.connect__from input[type="file"] {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 0.7rem;
+}
+.connect__from .mdp_oublie {
+  align-self: flex-end;
+  color: $mainViolet;
+  font-size: $h55Size;
+}
+
+.connect__from input[type="submit"] {
+  background-color: $mainViolet;
+  border-radius: 0.75rem;
+  width: 100%;
+  padding: 1rem;
+  color: $mainBlanc;
+  font-size: $h5Size;
+  cursor: pointer;
+}
+
+.p_ligne {
+  font-size: $h55Size;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.p_ligne::before,
+.p_ligne::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: $mainNoir;
+}
+
+.p_ligne::before {
+  left: 0;
+}
+
+.p_ligne::after {
+  right: 0;
+}
+
+.connect__from .login_invalid {
+  color: $boutonRouge;
+  align-self: flex-start;
+  font-size: $h55Size;
+}
+
+.connect__face,
+.connect__google {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.connect__face img,
+.connect__google img {
+  width: 1.75rem;
+}
+
+.connect__from h1 img {
+  width: 40px;
+}
+
+@media (max-width: 800px) {
+  .connect__photo {
+    display: none;
+  }
+
+  .connect__from {
+    width: 80%;
+    padding: 3rem 0rem;
+    gap: 10px;
+  }
+
+  .connect__from h1 {
+    font-size: $h4Size;
+  }
+}
+
+.connect__input__ligne {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 0.5rem;
+  width: 100%;
+}
+
+.connect__input__add .connect__input__ligne input,
+.connect__input__ligne .connect__input {
+  width: 45%;
+}
+
+#connect__complement3,
+#connect__rue {
+  width: 100%;
+}
+
+.slider {
+  width: 40%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  margin-left: 5%;
+  position: sticky;
+  top: 20px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 90vh;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 90vh;
+}
+
+.slider img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.slider img:hover {
+  filter: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgb(86, 105, 255, 0.3);
+}
+@media (max-width: 900px) {
+  .connect-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+  }
+  .connect__from {
+    padding: 0rem;
+  }
+  .connect__from input[type="file"] {
+    font-size: 1rem;
+  }
+  .slider {
+    width: 80%;
+    height: 30vh;
+    margin-left: 0px;
+    position: static;
+  }
+  .slide,
+  .slider img {
+    height: 30vh;
+  }
+  .prev,
+  .next {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .connect__from .mdp_oublie {
+    font-size: 0.8rem;
+  }
+  .slider {
+    height: 20vh;
+  }
+  .slide,
+  .slider img {
+    height: 20vh;
+  }
+  .connect__from p {
+    font-size: 0.8rem;
+  }
+  .connect__from h1 {
+    font-size: 1.2rem;
+  }
+  .connect__from h1 img {
+    width: 20px;
+  }
+  .connect__from {
+    gap: 5px;
+  }
+  .connect__input {
+    gap: 0.25rem;
+  }
+  .connect__from form {
+    gap: 0.5rem;
+  }
+  .connect__input input,
+  .connect__input select {
+    padding: 0.5rem;
+  }
+  .connect__input input::placeholder,
+  .connect__input select,
+  .connect__from input[type="date"],
+  .connect__from input[type="file"] {
+    font-size: 0.8rem;
+  }
+  .connect__from input[type="submit"] {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 350px) {
+  .connect__input__add .connect__input__ligne input,
+  .connect__input__ligne .connect__input {
+    width: 100%;
+  }
+}
+
+#connect__code {
+  background-color: #d6d6d679;
+}
+
+/* Styles de base pour l'autocomplétion */
+.autocomplete-suggestions {
+  width: 90%;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #fff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  position: absolute;
+  margin-top: 1px;
+  z-index: 500;
+}
+
+.autocomplete-suggestion {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.autocomplete-suggestion:hover {
+  background-color: #9aa5ff;
+  z-index: 501;
+}
+
+.hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.hover:hover {
+  cursor: pointer;
+  background-color: $hoverViolet !important;
+}

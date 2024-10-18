@@ -1,0 +1,51 @@
+@import url("setup.css");
+.card__container {
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+  background-color: #FFFFFF;
+  border-radius: 0.75rem;
+  box-shadow: 4px 4px 16px rgba(18, 18, 18, 0.06);
+}
+.card__container img {
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+.card__container .logement__wrapper_description {
+  margin: 1rem;
+}
+.card__container .logement__wrapper_description .logement__titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__container .logement__wrapper_description .logement__titre .logement__nom {
+  color: #222222;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card__container .logement__wrapper_description .logement__titre .logement__note {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card__container .logement__wrapper_description .logement__titre .logement__note i {
+  margin-right: 0.5rem;
+  color: #FFD33C;
+}
+.card__container .logement__wrapper_description .logement__localisation {
+  color: #878787;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card__container .logement__wrapper_description .logement__prix__alignement {
+  display: flex;
+}
+.card__container .logement__wrapper_description .logement__prix__alignement h1 {
+  margin-right: 0.3rem;
+}
+.card__container .logement__wrapper_description .logement__prix__alignement h1.logement__prix {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5669FF;
+}/*# sourceMappingURL=logement_card.css.map */
