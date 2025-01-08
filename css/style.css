@@ -984,6 +984,9 @@ h1 {
   margin-bottom: 0rem;
   line-height: initial;
 }
+.hero-p p{
+  text-align: center;
+}
 }
 .formation-title{
   align-items: flex-start;
